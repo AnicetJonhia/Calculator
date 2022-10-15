@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anicet's calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="main">
+                <div class="title">
+                    Calculatrice
+                </div><br>
+                <form action="form">
+                    <label for="firstNumber">Premier nombre</label> <br>
+                    <input type="text" name="firstNumber" id="firstNumber" placeholder="X" required><br><br>
+                    <label for="secondNumber">Deuxième nombre</label> <br>
+                    <input type="text" name="secondNumber" id="secondNumber" placeholder="Y" required> <br><br>
+                    <label for="operator">Opérateur</label><br>
+                    <select name="operator" id="operator">
+                        <option value="addition">+</option>
+                        <option value="substraction">-</option>
+                        <option value="multiplication">*</option>
+                        <option value="division">/</option>
+                    </select><br><br><br><br><br><br>
+                    <label for="result">Résultat</label><br>
+                    <input type="text" name="result" id="result" placeholder="Z"><br><br>
+                    <button id="button" type="button" onclick="main()">Calculer</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
